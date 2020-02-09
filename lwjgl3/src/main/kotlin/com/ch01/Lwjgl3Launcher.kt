@@ -3,10 +3,6 @@ package com.ch01
 import com.badlogic.gdx.Game
 import com.badlogic.gdx.backends.lwjgl3.Lwjgl3Application
 import com.badlogic.gdx.backends.lwjgl3.Lwjgl3ApplicationConfiguration
-import com.ch02.StarfishCollectorAlpha
-import com.ch02.StarfishCollectorBeta
-import com.ch03.StarfishCollector
-import com.ch03.StarfishGame
 import java.util.*
 
 /** Launches the desktop (LWJGL3) application.  */
@@ -17,10 +13,11 @@ object Lwjgl3Launcher {
     }
 
     private val applications: ArrayList<Game> = arrayListOf(
-            StarfishGame(),
-            StarfishCollector(),
-            StarfishCollectorBeta(),
-            StarfishCollectorAlpha(),
+            com.ch04.SpaceGame(),
+            com.ch03.StarfishGame(),
+            com.ch03.StarfishCollector(),
+            com.ch02.StarfishCollectorBeta(),
+            com.ch02.StarfishCollectorAlpha(),
             HelloWorldImage()
     )
 
