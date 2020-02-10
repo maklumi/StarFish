@@ -13,6 +13,7 @@ object Lwjgl3Launcher {
     }
 
     private val applications: ArrayList<Game> = arrayListOf(
+            com.ch12.zelda.LegendOfZelda(),
             com.ch11.mariobros.MarioBrosGame(),
             com.ch10.brickbreaker.BreakoutGame(),
             com.ch10.starfish.StarfishGame(),

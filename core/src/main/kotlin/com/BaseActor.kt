@@ -35,7 +35,7 @@ open class BaseActor(x: Float, y: Float, stage: Stage) : Group() {
     val accelerationVec = Vector2(0f, 0f)
     var acceleration = 0f
     var maxSpeed = 1000f
-    private var deceleration = 0f
+    var deceleration = 0f
 
     private var boundaryPolygon: Polygon? = null
 
@@ -242,9 +242,9 @@ open class BaseActor(x: Float, y: Float, stage: Stage) : Group() {
      * Deceleration is only applied when object is not accelerating.
      * param dec Deceleration in (pixels/second) per second.
      */
-    fun setDeceleration(dec: Float) {
-        deceleration = dec
-    }
+//    fun setDeceleration(dec: Float) {
+//        deceleration = dec
+//    }
 
     /**
      * Set maximum speed of this object.
