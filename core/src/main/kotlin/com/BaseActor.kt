@@ -31,7 +31,7 @@ open class BaseActor(x: Float, y: Float, stage: Stage) : Group() {
     private var animationPaused = false
 
     // initialize physics data
-    private val velocityVec = Vector2(0f, 0f)
+    protected val velocityVec = Vector2(0f, 0f)
     private val accelerationVec = Vector2(0f, 0f)
     var acceleration = 0f
     var maxSpeed = 1000f
