@@ -13,6 +13,8 @@ object Lwjgl3Launcher {
     }
 
     private val applications: ArrayList<Game> = arrayListOf(
+            com.ch09.solitaire.SolitaireCardGame(),
+            com.ch09.jigsaw.JigsawPuzzleGame(),
             com.ch08.brickbreaker.BreakoutGame(),
             com.ch07.sidescrolling.PlaneDodgerGame(),
             com.ch06.rhythm.RhythmGame(),
@@ -35,7 +37,7 @@ object Lwjgl3Launcher {
     private val defaultConfiguration: Lwjgl3ApplicationConfiguration
         get() {
             val configuration = Lwjgl3ApplicationConfiguration()
-            configuration.setTitle("StarFish")
+            configuration.setTitle(applications.first()::class.java.simpleName)
             configuration.setWindowedMode(800, 600)
             configuration.setWindowPosition(5, 1030 - 600)
             configuration.setWindowIcon("libgdx128.png", "libgdx64.png", "libgdx32.png", "libgdx16.png")
