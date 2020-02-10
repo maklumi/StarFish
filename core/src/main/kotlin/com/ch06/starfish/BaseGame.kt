@@ -20,10 +20,6 @@ abstract class BaseGame : Game() {
     /**
      * Called when game is initialized; stores global reference to game object.
      */
-    init {
-        @Suppress("LeakingThis")
-        game = this
-    }
 
     /**
      * Called when game is initialized,
@@ -57,6 +53,7 @@ abstract class BaseGame : Game() {
         textButtonStyle.font = customFont
         textButtonStyle.fontColor = Color.GRAY
 
+        game = this
     }
 
     companion object {
