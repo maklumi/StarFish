@@ -7,6 +7,7 @@ sourceCompatibility = 1.8
 
 dependencies {
 	api project(':core')
+	api "com.badlogicgames.gdx:gdx-controllers-lwjgl3:$gdxVersion"
 	api "com.badlogicgames.gdx:gdx-backend-lwjgl3:$gdxVersion"
 	api "com.badlogicgames.gdx:gdx-platform:$gdxVersion:natives-desktop"
 	api "com.badlogicgames.gdx:gdx-tools:$gdxVersion"
