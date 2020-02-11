@@ -52,7 +52,7 @@ open class BaseActor(x: Float, y: Float, stage: Stage) : Group() {
      * param speed of movement (pixels/second)
      * if length is zero, then assume motion angle is zero degrees
      */
-    var speed: Float
+    open var speed: Float
         get() = velocityVec.len()
         set(speed) {
             if (velocityVec.len() == 0f)
